@@ -131,6 +131,8 @@ bo_create(int fd, unsigned int format,
 	case DRM_FORMAT_NV61:
 	case DRM_FORMAT_YUV420:
 	case DRM_FORMAT_YVU420:
+	case DRM_FORMAT_RGB332:
+	case DRM_FORMAT_BGR233:
 		bpp = 8;
 		break;
 
@@ -273,6 +275,8 @@ bo_create(int fd, unsigned int format,
 		break;
 
 	case DRM_FORMAT_C8:
+	case DRM_FORMAT_RGB332:
+	case DRM_FORMAT_BGR233:
 	case DRM_FORMAT_ARGB4444:
 	case DRM_FORMAT_XRGB4444:
 	case DRM_FORMAT_ABGR4444:
