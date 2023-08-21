@@ -54,6 +54,8 @@ static const struct util_format_info format_info[] = {
 	/* YUV planar */
 	{ DRM_FORMAT_YUV420, "YU12", MAKE_YUV_INFO(YUV_YCbCr, 2, 2, 1) },
 	{ DRM_FORMAT_YVU420, "YV12", MAKE_YUV_INFO(YUV_YCrCb, 2, 2, 1) },
+	{ DRM_FORMAT_YUV422, "YU16", MAKE_YUV_INFO(YUV_YCbCr, 2, 1, 1) },
+	{ DRM_FORMAT_YVU422, "YV16", MAKE_YUV_INFO(YUV_YCrCb, 2, 1, 1) },
 	/* RGB8 */
 	{ DRM_FORMAT_RGB332, "RGB8", MAKE_RGB_INFO(3, 5, 3, 2, 2, 0, 0, 0) },
 	{ DRM_FORMAT_BGR233, "BGR8", MAKE_RGB_INFO(3, 0, 3, 3, 2, 6, 0, 0) },
